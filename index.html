@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Wife Favors — Little Things App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container">
+        <h1>Wife Favors</h1>
+        <p class="tag">A sweet list of little favors — pick, add, or surprise!</p>
+        <div class="controls">
+          <button id="randomBtn" class="btn">Surprise me</button>
+          <button id="shuffleBtn" class="btn">Shuffle</button>
+          <button id="addBtn" class="btn primary">Add Favor</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="filters">
+        <label><input type="radio" name="filter" value="all" checked /> All</label>
+        <label><input type="radio" name="filter" value="available" /> Available</label>
+        <label><input type="radio" name="filter" value="done" /> Done</label>
+        <label><input type="radio" name="filter" value="fav" /> Favorited</label>
+        <span id="status" class="status"></span>
+      </section>
+
+      <section id="grid" class="grid" aria-live="polite"></section>
+    </main>
+
+    <!-- Add/Edit Modal -->
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="modal-panel">
+        <h2>Add a favor</h2>
+        <form id="favorForm">
+          <label>Title<input name="title" required maxlength="80" /></label>
+          <label>Description<textarea name="desc" rows="3" maxlength="300"></textarea></label>
+          <label>Duration (minutes)<input name="minutes" type="number" min="0" /></label>
+          <div class="modal-actions">
+            <button type="submit" class="btn primary">Add</button>
+            <button type="button" id="cancelBtn" class="btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
