@@ -54,7 +54,7 @@
 
     statusEl.textContent = `${list.length} items`
 
-    if(list.length===0){ grid.innerHTML = '<p class="small">No favors yet — add one!</p>'; return }
+    if(list.length===0){ grid.innerHTML = '<p class="small">Ingen tjenester  — Tilføj en!</p>'; return }
 
     for(const f of list){
       const card = document.createElement('article')

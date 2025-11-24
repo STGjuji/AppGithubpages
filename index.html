@@ -3,28 +3,30 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Wife Favors — Little Things App</title>
+    <title>Ida's Tjenester</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
-      <div class="container">
-        <h1>Wife Favors</h1>
-        <p class="tag">A sweet list of little favors — pick, add, or surprise!</p>
+      <div class="container topbar-row">
+        <div class="brand">
+          <img id="logo" src="images/logo.png" alt="App logo" />
+          <h1>Ida's tjenester</h1>
+        </div>
         <div class="controls">
-          <button id="randomBtn" class="btn">Surprise me</button>
-          <button id="shuffleBtn" class="btn">Shuffle</button>
-          <button id="addBtn" class="btn primary">Add Favor</button>
+          <button id="randomBtn" class="btn">Overrask Mig</button>
+          <button id="shuffleBtn" class="btn">Ryst i posen</button>
+          <button id="addBtn" class="btn primary">Tilføj Kort</button>
         </div>
       </div>
     </header>
 
     <main class="container">
       <section class="filters">
-        <label><input type="radio" name="filter" value="all" checked /> All</label>
-        <label><input type="radio" name="filter" value="available" /> Available</label>
-        <label><input type="radio" name="filter" value="done" /> Done</label>
-        <label><input type="radio" name="filter" value="fav" /> Favorited</label>
+        <label><input type="radio" name="filter" value="all" checked /> Alle</label>
+        <label><input type="radio" name="filter" value="available" /> Tilgængelig</label>
+        <label><input type="radio" name="filter" value="done" /> Færdig</label>
+        <label><input type="radio" name="filter" value="fav" /> Ynglings</label>
         <span id="status" class="status"></span>
       </section>
 

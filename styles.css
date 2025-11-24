@@ -36,6 +36,25 @@ body {
   margin: 6px 0 0;
   opacity: 0.95;
 }
+.topbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  background: rgba(255, 255, 255, 0.06);
+}
 .controls {
   margin-top: 12px;
   display: flex;
@@ -168,5 +187,9 @@ body {
   }
   .controls {
     justify-content: flex-start;
+  }
+  #logo {
+    width: 40px;
+    height: 40px;
   }
 }
